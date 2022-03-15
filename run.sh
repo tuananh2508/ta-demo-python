@@ -8,7 +8,7 @@ if [ $? -eq 1 ]; then
   echo "$CONTAINER doesn't exist"
 else
   echo "$CONTAINER does existed, will remove the container"
-  sudo rm -f $CONTAINER
+  sudo docker rm -f $CONTAINER
 fi
 
 echo "Start deploying ..."
